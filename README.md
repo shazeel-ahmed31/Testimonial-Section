@@ -1,2 +1,2 @@
 # Testimonial-Section
-A responsive testimonial section built with HTML, CSS, and JavaScript to showcase user feedback interactively.
+This GitHub repository contains a fully responsive testimonial section created using HTML, CSS, and JavaScript. The section is designed to showcase user or client feedback in an interactive and visually appealing way. It features a clean HTML structure, custom CSS styling for layout and design, and JavaScript to add interactivity such as sliding or rotating testimonials. This component is ideal for use in personal portfolios, business websites, or product landing pages where displaying reviews or testimonials helps build trust and engagement.
