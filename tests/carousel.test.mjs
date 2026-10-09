@@ -1,0 +1,3 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {wrapIndex,canAutoplay} from '../lib/carousel.ts';
+test('carousel wraps previous and next and handles empty data',()=>{assert.equal(wrapIndex(-1,5),4);assert.equal(wrapIndex(5,5),0);assert.equal(wrapIndex(8,0),0);});
+test('autoplay never runs with reduced motion, focus, hover, hidden page or one slide',()=>{assert.equal(canAutoplay(true,false,false,false,true,5),true);for(const args of [[false,false,false,false,true,5],[true,true,false,false,true,5],[true,false,true,false,true,5],[true,false,false,true,true,5],[true,false,false,false,false,5],[true,false,false,false,true,1]])assert.equal(canAutoplay(...args),false);});
